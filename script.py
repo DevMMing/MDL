@@ -11,8 +11,13 @@ def run(filename):
 
     if p:
         (commands, symbols) = p
+        #print(p)
+        #print("commands")
+        #print(commands)
+        print("symbols")
+        print(symbols)
     else:
-        print "Parsing failed."
+        print ("Parsing failed.")
         return
 
     view = [0,
@@ -46,6 +51,6 @@ def run(filename):
                           'blue': [0.2, 0.5, 0.5]}]
     reflect = '.white'
 
-    print symbols
+    print (symbols)
     for command in commands:
-        print command
+        print (command)
